@@ -42,3 +42,7 @@ class TestAnalyzeCLI(unittest.TestCase):
         code = subprocess.call(cmd)
         self.assertNotEqual(code, 0, "Exit status {} should not be 0"
                                      .format(code))
+
+    def test_sure_to_fail(self):
+        """this will totally fail"""
+        self.assertTrue(False)
