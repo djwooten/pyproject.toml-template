@@ -1,0 +1,11 @@
+[report]
+fail_under = 90
+include =
+    src/*
+omit =
+    tests/*
+exclude_lines =
+    if __name__ == "__main__"
+    _parse_cmd_opts()
+    main()
+show_missing = True
