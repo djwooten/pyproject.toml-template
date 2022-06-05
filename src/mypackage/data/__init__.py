@@ -5,7 +5,7 @@ class Data:
     """Base class for example datasets"""
     @classmethod
     def _get_path(cls, fname: str) -> str:
-        """Returns path to filename within this data directory"""
+        """Return path to filename within this data directory"""
         return pkg_resources.resource_filename('mypackage', 'data/{}'
                                                .format(fname))
 

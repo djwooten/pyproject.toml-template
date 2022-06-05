@@ -1,10 +1,8 @@
-"""
-Math helper functions
-"""
+"""Math helper functions"""
 
 
 def _validate_numbers(*args):
-    """Ensures args only contains ints or floats
+    """Ensure args only contains ints or floats
 
     :param *args: Variable list of numbers
     :raises ValueError: if any arg is not an int or float, or if no numbers  \
@@ -18,7 +16,7 @@ def _validate_numbers(*args):
 
 
 def average(*args) -> float:
-    """Calculates the average of args
+    """Calculate the average of args
 
     Parameters
     ----------
@@ -40,11 +38,11 @@ def average(*args) -> float:
     n = len(args)
     for arg in args:
         s += arg
-    return s/(1.0*n)
+    return s / (1.0 * n)
 
 
 def median(*args):
-    """Calculates the median of args
+    """Calculate the median of args
 
     Parameters
     ----------
@@ -66,5 +64,5 @@ def median(*args):
     asort = sorted(args)
 
     if n % 2 == 0:  # even
-        return (asort[int(n/2)-1] + asort[int(n/2)])/2.0
-    return asort[int(n/2)]
+        return (asort[int(n / 2) - 1] + asort[int(n / 2)]) / 2.0
+    return asort[int(n / 2)]
