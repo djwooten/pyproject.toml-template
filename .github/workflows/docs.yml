@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: '3.10.4'
       - name: Install python requirements
-        run: pip install -r .github/python-requirements_docs.py
+        run: pip install -r .github/python-requirements_docs.txt
       - name: Build
         run: pdoc -o docs -d numpy mypackage
       - name: Deploy
