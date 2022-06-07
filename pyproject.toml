@@ -8,3 +8,4 @@ version_variable = [
 ]
 version_source = "tag"
 repository_url = "https://test.pypi.org/"
+branch = "main"
