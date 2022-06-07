@@ -6,4 +6,5 @@ build-backend = "setuptools.build_meta"
 version_variable = [
     'src/mypackage/__init__.py:__version__',
 ]
+version_source = "tag"
 repository_url = "https://test.pypi.org/"
